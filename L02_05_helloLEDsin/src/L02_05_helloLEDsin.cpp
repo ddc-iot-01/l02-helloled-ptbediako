@@ -23,6 +23,11 @@ void setup() {
   b=127.5;
 }
 
+/*hint: the assignment flowchart shows the structure of the code for 
+this void loop, it's 3 lines long
+line 1: get time in seconds,
+line 2: write out the formula for brightness to set it,
+line 3: write code to light up the LED (analogWrite)*/
 void loop() {
   t = millis()/1000.0;
   brightness = a * sin(2*M_PI*(1/5.0)*t) + b; //don't forget the decimal on 5 -> 5.0 to make it a float//
